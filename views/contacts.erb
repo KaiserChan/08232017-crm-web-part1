@@ -1,16 +1,25 @@
-<h1>Here are the current contacts</h1>
+<div class="contact">
 
-<ul>
-  <% @contacts.each do |entry| %>
-  <li>ID: <%= entry.id %></li>
-  <li>First Name: <%= entry.first_name %></li>
-  <li>Last Name: <%= entry.last_name %></li>
-  <li>Email: <%= entry.email %></li>
-  <li>Note: <%= entry.note %></li>
-  <p></p>
-  <% end %>
-</ul>
+  <h2 class="contact_header">Here are the current contacts</h1>
 
-<div class="">
-  <p><a href="./">Back to the home page</a></p>
+  <ul class="contact_list">
+    <% @contacts.each do |entry| %>
+    <li class="contact_id">ID: <%= entry.id %></li>
+    <li class="contact_detail">First Name: <%= entry.first_name %></li>
+    <li class="contact_detail">Last Name: <%= entry.last_name %></li>
+    <li class="contact_detail">Email: <%= entry.email %></li>
+    <li class="contact_detail">Note: <%= entry.note %></li>
+    <li class="contact_action"><a href="#">Edit</a> | <a href="#">Delete</a></li>
+    <!-- <p></p> -->
+    <% end %>
+  </ul>
+
+  <div class="return" style = "height: 50%;margin-bottom: 50px;">
+    <p><a href="./">Back to the home page</a></p>
+    <br>
+  </div>
+
+
+
+
 </div>

@@ -18,6 +18,10 @@ get '/about' do
   erb :about
 end
 
+get '/add_contact' do
+  erb :add_contact
+end
+
 after do
   ActiveRecord::Base.connection.close
 end

@@ -9,18 +9,23 @@ header {
   background-color: black;
   color: white;
   font-size: 3rem;
+  padding: 1rem 0;
+  width: 90%;
+  margin: 0 auto;
 }
 
 nav {
   margin-top: 2px;
+  width: 90%;
+  margin: 0 auto;
 }
 
-ul {
+.menu {
   padding: 0;
   margin: 0;
 }
 
-li {
+.menu_item {
   list-style: none;
   background-color: lightgrey;
   color: white;
@@ -32,17 +37,74 @@ li {
 }
 
 footer {
-  position: fixed;
   bottom: 0px;
   left: 8px;
   right: 8px;
   align-items: center;
-  /*width: 800px;*/
   height: 50px;
   background-color: grey;
+  /*margin-top: 50px;*/
+  position: fixed;
 }
 
 footer p {
   color: white;
   text-align: center;
 }
+
+
+.contact {
+  width: 85%;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.contact_header {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 20px 20px;
+  background-color: lightpink;
+}
+
+.contact_list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact_id {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-top: 35px;
+}
+
+.contact_detail {
+  background-color: lightblue;
+  text-align: left;
+  color: black;
+  list-style: none;
+  font-weight: bold;
+  padding: 10px;
+}.
+
+.return {
+  height: 60%;
+  margin-bottom: 100px;
+}
+
+.contact_list :nth-child(1) {
+  margin-top: 0px;
+}
+
+/*.contact_last_item {
+  padding-bottom: 25px;
+}*/
+
+/*.contact_action {
+  color: white;
+  background-color: blue;
+  font-weight: bold;
+}*/
