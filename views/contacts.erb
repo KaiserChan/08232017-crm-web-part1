@@ -1,0 +1,16 @@
+<h1>Here are the current contacts</h1>
+
+<ul>
+  <% @contacts.each do |entry| %>
+  <li>ID: <%= entry.id %></li>
+  <li>First Name: <%= entry.first_name %></li>
+  <li>Last Name: <%= entry.last_name %></li>
+  <li>Email: <%= entry.email %></li>
+  <li>Note: <%= entry.note %></li>
+  <p></p>
+  <% end %>
+</ul>
+
+<div class="">
+  <p><a href="./">Back to the home page</a></p>
+</div>
