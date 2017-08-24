@@ -14,6 +14,10 @@ get '/contacts' do
   erb :contacts
 end
 
+get '/contacts/:id' do
+  erb :show_contact
+end
+
 get '/about' do
   erb :about
 end
