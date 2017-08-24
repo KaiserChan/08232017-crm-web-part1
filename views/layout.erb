@@ -3,12 +3,29 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
-    <title></title>
+    <title>Connor CRM</title>
   </head>
+
+  <header>
+    Connor CRM
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="/contacts"></a>Home</li>
+      <li><a href="/add_contact"></a>Add a contact</li>
+      <li><a href="/about"></a>About us</li>
+    </ul>
+  </nav>
 
   <body>
     <%= yield %>
   </body>
+
+  <footer>
+    <p>Copyright (c) 2017 Kaiser Chan All Rights Reserved.</p>
+  </footer>
 
 </html>
