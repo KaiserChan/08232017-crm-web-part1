@@ -15,6 +15,8 @@ get '/contacts' do
 end
 
 get '/contacts/:id' do
+  params[:id]
+  @contacts = Contact.find_by({id: params[:id].to_i})
   erb :show_contact
 end
 
