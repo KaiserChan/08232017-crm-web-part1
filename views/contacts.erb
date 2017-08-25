@@ -1,20 +1,21 @@
 <div class="contact">
 
-  <h2 class="contact_header">Here are the current contacts</h1>
+  <h2 class="contact_header">There are <%=@contacts.size%> contacts saved.</h1>
 
   <ul class="contact_list">
     <% @contacts.each do |entry| %>
     <li class="contact_id">ID: <%= entry.id %></li>
     <li class="contact_detail">First Name: <%= entry.first_name %></li>
     <li class="contact_detail">Last Name: <%= entry.last_name %></li>
-    <li class="contact_detail">Email: <%= entry.email %></li>
-    <li class="contact_detail">Note: <%= entry.note %></li>
+    <li class="contact_detail"><a href="./contacts/<%=entry.id%>">More ...</a></li>
+    <!-- <li class="contact_detail">Email: <%= entry.email %></li>
+    <li class="contact_detail">Note: <%= entry.note %></li> -->
     <li class="contact_action"><a href="#">Edit</a> | <a href="#">Delete</a></li>
     <!-- <p></p> -->
     <% end %>
   </ul>
 
-  <div class="return" style = "height: 50%;margin-bottom: 50px;">
+  <div class="return" style = "height: 50%;margin:40px 0 80px 0;">
     <p><a href="./">Back to the home page</a></p>
     <br>
   </div>
