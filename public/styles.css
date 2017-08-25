@@ -1,3 +1,4 @@
+/* <---------- LAYOUT STYLE BELOW ---------->*/
 html {
   box-sizing: border-box;
   font-family: helvetica, monospace, sans-serif;
@@ -53,10 +54,23 @@ footer p {
 }
 
 
+/* <---------- HOME INDEX STYLE BELOW ---------->*/
+.home {
+  width: 85%;
+  margin: 70px auto 0 auto;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.home_header {
+  margin-bottom: 70px;
+}
+
+/* <---------- CONTACTS STYLE BELOW ---------->*/
 .contact {
   width: 85%;
   margin: 0 auto;
-  font-size: 1rem;
+  font-size: 1.25rem;
   text-align: left;
 }
 
@@ -99,17 +113,30 @@ footer p {
   margin-top: 0px;
 }
 
-/*.return {
+.return {
   height: 50%;
-  bottom: 100px;
-}*/
-
-/*.contact_last_item {
-  padding-bottom: 25px;
-}*/
+  margin:40px 0 80px 0;
+}
 
 /*.contact_action {
   color: white;
   background-color: blue;
   font-weight: bold;
 }*/
+
+
+/* <---------- ABOUT US STYLE BELOW ---------->*/
+.about {
+  width: 85%;
+  margin: 70px auto 0 auto;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.about_header {
+  margin-bottom: 40px;
+}
+
+.about_intro {
+  margin-bottom: 60px;
+}

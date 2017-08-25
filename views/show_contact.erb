@@ -1,18 +1,23 @@
-<h1>Contact</h1>
+<div class="contact">
 
-<p>
-  <ul>
+  <h1 class="contact_header">Contact</h1>
 
-    <li><strong>ID: </strong><%= @contacts.id %></li>
-    <li><strong>First Name: </strong><%= @contacts.first_name %></li>
-    <li><strong>Last Name: </strong><%= @contacts.last_name %></li>
-    <li><strong>Email: </strong><%= @contacts.email %></li>
-    <li><strong>Note: </strong><%= @contacts.note %></li>
+  <p>
+    <ul class="contact_list">
 
-  </ul>
+      <li class="contact_id"><strong>ID: </strong><%= @contacts.id %></li>
+      <li class="contact_detail"><strong>First Name: </strong><%= @contacts.first_name %></li>
+      <li class="contact_detail"><strong>Last Name: </strong><%= @contacts.last_name %></li>
+      <li class="contact_detail"><strong>Email: </strong><%= @contacts.email %></li>
+      <li class="contact_detail"><strong>Note: </strong><%= @contacts.note %></li>
+      <li class="contact_action"><a href="#">Edit</a> | <a href="#">Delete</a></li>
 
-  <div class="return" style = "height: 50%;margin:40px 0 80px 0;">
-    <p><a href="/contacts">Back to contact list</a></p>
-    <br>
-  </div>
-</p>
+    </ul>
+
+    <div class="return">
+      <p><a href="/contacts">Back to contact list</a></p>
+      <br>
+    </div>
+  </p>
+
+</div>
