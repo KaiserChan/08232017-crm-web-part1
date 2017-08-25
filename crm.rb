@@ -28,8 +28,8 @@ get '/about' do
   erb :about
 end
 
-get '/add_contact' do
-  erb :add_contact
+get '/new' do
+  erb :new
 end
 
 after do
