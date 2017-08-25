@@ -46,7 +46,7 @@ post '/contacts' do
   redirect to('/contacts')
 end
 
-get '/contacts/:id/delete' do
+delete '/contacts/:id' do
   @contact = Contact.find_by(id: params[:id].to_i)
   if @contact
     @contact.delete
