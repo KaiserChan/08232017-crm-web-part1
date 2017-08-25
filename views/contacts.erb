@@ -8,9 +8,11 @@
     <li class="contact_detail">First Name: <%= entry.first_name %></li>
     <li class="contact_detail">Last Name: <%= entry.last_name %></li>
     <li class="contact_detail"><a href="/contacts/<%=entry.id%>">More ...</a></li>
-    <li class="contact_action"><a href="/contacts/<%=entry.id%>/edit">Edit</a> | <a href="/contacts/<%=entry.id%>/delete">Delete</a></li>
+    <li class="contact_action"><a href="/contacts/<%=entry.id%>/edit"><button>Edit</button></a> | <a href="/contacts/<%=entry.id%>/delete"><button>Delete</button></a></li>
+
     <% end %>
   </ul>
+
 
   <div class="return" style = "height: 50%;margin:40px 0 80px 0;">
     <p><a href="./">Back to the home page</a></p>
