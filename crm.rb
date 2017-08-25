@@ -46,6 +46,11 @@ post '/contacts' do
   redirect to('/contacts')
 end
 
+get '/contacts/:id/edit' do
+  erb :edit_contact
+end
+
+
 after do
   ActiveRecord::Base.connection.close
 end
