@@ -102,7 +102,7 @@ footer p {
   list-style: none;
   font-weight: bold;
   padding: 10px;
-}.
+}
 
 .return {
   height: 60%;
@@ -118,12 +118,23 @@ footer p {
   margin:40px 0 80px 0;
 }
 
+/*??? THE FOLLOWING STYLES ARE NOT BEING PICKED UP ???*/
+
+/*.delete_button {
+  display: inline-block;
+}*/
+
 /*.contact_action {
   color: white;
   background-color: blue;
   font-weight: bold;
 }*/
 
+/*.return {
+  height: 50%;
+  margin: 40px 0 80px 0;
+}
+*/
 
 /* <---------- ABOUT US STYLE BELOW ---------->*/
 .about {
@@ -139,4 +150,40 @@ footer p {
 
 .about_intro {
   margin-bottom: 60px;
+}
+
+
+/* <---------- FORMS (CREATE NEW / EDIT) STYLE BELOW ---------->*/
+
+/*??? THE FOLLOWING STYLES ARE NOT BEING PICKED UP ???*/
+
+.create_new {
+  width: 85%;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+.edit {
+  width: 85%;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+.input_section {
+  margin-bottom: 25px;
+}
+
+.input_field {
+  width: 150px;
+}
+
+.input_form {
+  width: 250px;
+}
+
+.input_note {
+  width: 250px;
+  height: 150px;
 }

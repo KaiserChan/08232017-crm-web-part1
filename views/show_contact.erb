@@ -10,7 +10,12 @@
       <li class="contact_detail"><strong>Last Name: </strong><%= @contacts.last_name %></li>
       <li class="contact_detail"><strong>Email: </strong><%= @contacts.email %></li>
       <li class="contact_detail"><strong>Note: </strong><%= @contacts.note %></li>
-      <li class="contact_action"><a href="/contacts/<%=@contacts.id%>/edit"><button>Edit</button></a> | <a href="/contacts/<%=@contacts.id%>/delete"><button>Delete</button></a></li>
+      <li class="contact_action"><a href="/contacts/<%=@contacts.id%>/edit"><button>Edit</button></a> |
+        <form action="/contacts/<%=@contacts.id%>" method="post">
+          <input type="hidden" value="delete" name="_method">
+          <input type="submit" value="Delete">
+        </form>
+      </li>
 
     </ul>
 

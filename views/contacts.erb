@@ -8,7 +8,13 @@
     <li class="contact_detail">First Name: <%= entry.first_name %></li>
     <li class="contact_detail">Last Name: <%= entry.last_name %></li>
     <li class="contact_detail"><a href="/contacts/<%=entry.id%>">More ...</a></li>
-    <li class="contact_action"><a href="/contacts/<%=entry.id%>/edit"><button>Edit</button></a> | <form action="/contacts/<%=entry.id%>" method="post"><input type="hidden" value="delete" name="_method"><input type="submit" value="Delete"></form></li>
+    <li class="contact_action">
+      <a href="/contacts/<%=entry.id%>/edit"><button>Edit</button></a> |
+      <form class="delete_button" action="/contacts/<%=entry.id%>" method="post">
+        <input type="hidden" value="delete" name="_method">
+        <input type="submit" value="Delete">
+      </form>
+    </li>
 
     <% end %>
   </ul>
