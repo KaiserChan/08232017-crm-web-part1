@@ -25,8 +25,9 @@ end
 get '/contacts/:id' do
   params[:id]
   @contacts = Contact.find(params[:id].to_i)
-  erb :show_contact
-  rescue ActiveRecord::RecordNotFound
+  if @contacts
+    erb :show_contact
+  else
     raise Sinatra::NotFound
   end
 end

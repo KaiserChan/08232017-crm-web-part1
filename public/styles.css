@@ -78,7 +78,7 @@ footer p {
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 20px 20px;
-  background-color: lightpink;
+  background-color: skyblue;
 }
 
 .contact_list {
@@ -120,9 +120,9 @@ footer p {
 
 /*??? THE FOLLOWING STYLES ARE NOT BEING PICKED UP ???*/
 
-/*.delete_button {
+.delete_button {
   display: inline-block;
-}*/
+}
 
 /*.contact_action {
   color: white;
@@ -130,11 +130,11 @@ footer p {
   font-weight: bold;
 }*/
 
-/*.return {
+.return {
   height: 50%;
   margin: 40px 0 80px 0;
 }
-*/
+
 
 /* <---------- ABOUT US STYLE BELOW ---------->*/
 .about {
